@@ -1,17 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  
     <App />
-  </React.StrictMode>
+  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// react dom also known as virtual dom is a lightweight copy of the real dom. It is a representation of the real dom in memory. It is used to improve the performance of the application by minimizing the number of updates to the real dom. When a component's state or props change, React creates a new virtual dom and compares it with the previous virtual dom. It then calculates the minimum number of changes required to update the real dom and applies those changes. This process is called reconciliation.
